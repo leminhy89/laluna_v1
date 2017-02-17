@@ -2,7 +2,7 @@
 lock "3.7.2"
 
 set :application, "LalunaPalace"
-set :repo_url, "git@bitbucket.org:lalunaproduction/llnp_web.git"
+set :repo_url, "git@github.com:leminhy89/laluna_v1.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
