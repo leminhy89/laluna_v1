@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  role_id: 
+  description: MyString
+  email: MyString
+  encrypt_password: MyString
+  salt: MyString
+  delete_flag: false
+  created_by: MyString
+  updated_by: MyString
+
+two:
+  name: MyString
+  role_id: 
+  description: MyString
+  email: MyString
+  encrypt_password: MyString
+  salt: MyString
+  delete_flag: false
+  created_by: MyString
+  updated_by: MyString

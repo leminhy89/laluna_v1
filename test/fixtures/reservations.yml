@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  reservation_date: 2017-02-14 06:37:21
+  adult: 1
+  child: 1
+  status_id: 1
+  created_by: MyString
+  updated_by: MyString
+  delete_flag: false
+
+two:
+  name: MyString
+  description: MyString
+  reservation_date: 2017-02-14 06:37:21
+  adult: 1
+  child: 1
+  status_id: 1
+  created_by: MyString
+  updated_by: MyString
+  delete_flag: false

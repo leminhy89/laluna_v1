@@ -1,0 +1,113 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  laluna:
+    administrator_title: Management Page
+    select_language: Select Language
+    welcome: Welcome
+    languages:
+        vi: Vietnamese
+        en: English
+        kr: Korean
+        jp: Japanese
+        cn: Chinese
+    messages:
+        invalid         : Invalid input
+        checked         : Must be checked
+        empty           : Please put something here
+        min             : Input is too short
+        max             : Input is too long
+        number_min      : too low
+        number_max      : too high
+        url             : invalid URL
+        number          : not a number
+        email           : email address is invalid
+        email_repeat    : emails do not match
+        password_repeat : passwords do not match
+        repeat          : not match
+        complete        : input is not complete
+        select          : Please select an option
+        confirm_delete  : Are you sure to delete ???
+        confirm_cancel  : Are you sure to cancel ???
+    menu:
+        general               : General
+        information           : Information
+        user_management       : User Management
+        role_management       : Role Management
+        restaurant_management : Restaurant MNM
+        list_restaurant       : List Restaurant
+        reservation_management: Reservation
+        statistics            : Statistics
+        search_for            : search for...
+        reservation_status_management: Reservation Status
+        language_management   : Language Management
+        category_management   : Category Management
+    label:
+        add_new               : Add New
+        role_name             : Role Name
+        description           : Description
+        created_date          : Created Date
+        created_by            : Created By
+        updated_date          : Updated Date
+        updated_by            : Updated By
+        action                : Actions
+        edit                  : Edit
+        delete                : Delete
+        add_role              : Add Role
+        role_name             : Role Name
+        cancel                : Cancel
+        confirm               : Confirm
+        user_name             : Username
+        role                  : Role
+        add_user              : Add User
+        password              : Password
+        select_role           : Select Role
+        login                 : Login
+        forgot_password       : Forgot your password?
+        add_status            : Add Status
+        status_name           : Status Name
+        reservation_name      : Reservation Name
+        reservation_date      : Reservation Date
+        reservation_time      : Reservation Time
+        adult                 : Adult(s)
+        child                 : Child(s)
+        status                : Status
+        add_reservation       : Add Reservation
+        counting              : Number of
+        hour                  : Hour
+        minute                : Minute
+        note                  : Note
+        reservation_detail    : Reservation Details
+        today                 : Today
+        num_of_reservation    : Total of Reservations
+        num_of_completed      : Reservations Completed
+        num_of_cancel         : Total of Cancel Reservation
+        num_of_customer       : Number of Customers
+        num_of_adult          : Number of Adults
+        num_of_child          : Number of Childs
+        from_last_week        : From last week
+        add_language          : Add Language
+        language_name         : Language Name
+        add_category          : Add Category
+        category_name         : Category Name
+        parent_category       : Parent Category
+        add_sub_category      : Add Sub

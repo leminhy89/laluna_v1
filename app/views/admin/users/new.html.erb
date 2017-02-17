@@ -1,0 +1,68 @@
+<div class="right_col" role="main">
+  <div class="">
+    <div class="page-title">
+      <div class="title_left">
+        <h3><%= t("laluna.menu.user_management") %><small></small></h3>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="row">
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+          <div class="x_content">
+            <%= form_for [:admin, @user], :html => {:class => 'form-horizontal form-label-left'} do |f| %>
+              </p>
+              <span class="section"><%= t("laluna.label.add_user") %></span>
+
+              <div class="item form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name"><%= t("laluna.label.user_name") %><span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <%= f.text_field :name, class:'form-control col-md-7 col-xs-12', 'data-validate-left-range' =>'6', 'data-validate-words' =>'1', placeholder:'', 'required' => 'required' %>
+                </div>
+              </div>
+              <div class="item form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Email <span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <%= f.text_field :email, class:'form-control col-md-7 col-xs-12', required: 'require' %>
+                </div>
+              </div>
+              <div class="item form-group">
+                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="role"><%= t("laluna.label.role") %> <span class="required">*</span>
+                  </label>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                      <%= f.select :role_id, Role.where(delete_flag: 0).all.collect {|x| [x.name, x.id]},{:include_blank => t("laluna.label.select_role")}, class:'form-control' %>
+                  </div>
+              </div>
+              <div class="item form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="password"><%= t("laluna.label.password") %><span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <%= f.password_field :password, class:'form-control col-md-7 col-xs-12', required: 'require' %>
+                </div>
+              </div>
+              <div class="item form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="description"><%= t("laluna.label.description") %> <span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <%= f.text_field :description, class:'form-control col-md-7 col-xs-12', 'data-validate-left-range' =>'1', 'data-validate-words' =>'1', placeholder:'', 'required' => 'required' %>
+                </div>
+              </div>
+              <div class="ln_solid"></div>
+              <div class="form-group">
+                <div class="col-md-6 col-md-offset-3">
+                  <%= link_to t("laluna.label.cancel"), new_admin_role_path, class:'btn btn-primary' %>
+                  <%= f.submit t("laluna.label.confirm"), class:'btn btn-success' %>
+                </div>
+              </div>
+              <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

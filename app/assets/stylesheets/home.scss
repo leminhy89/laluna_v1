@@ -1,0 +1,226 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+html {
+  background: image-url("background2.jpg") no-repeat center center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+header {  
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  margin: 0 0 2em 0;
+  padding: 3px 0 3px 0;  
+  color: white;
+}
+
+.card-panel > header > h2 {
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  font-size: 2.5em;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding-left: 0.05em;
+  position: relative;
+  text-transform: uppercase;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  color: white;
+}
+
+.light {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.dtv-card {
+  background: rgba(0, 0, 0, 0.81);
+  /*background: rgba(52, 27, 43, 0.5);*/
+}
+
+.brand-logo {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.nav-dtv {
+  text-transform: uppercase;
+  /*font-size: 2.5em;*/
+  font-weight: 900; 
+}
+
+.login-box {
+	background-color: white;
+	max-width: 340px;
+	margin: 0 auto;
+	position: relative;
+	top: 80px;
+	padding-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0 5px 50px rgba(0,0,0,0.4);
+	text-align: center;
+	padding-left: 1px;
+	padding-right: 3px;
+}
+
+.login-box .box-header {
+	background-color: #009688;
+	margin-top: 0;
+	border-radius: 5px 5px 0 0;
+	margin: 0 -3px 0 -1px
+}
+
+.login-box label {
+	font-weight: 700;
+	font-size: .8em;
+	color: #888;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 2em;
+}
+
+.login-box input {
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	font-size: .9em;
+	color: #888;
+	text-align: center;
+	width: 80%;
+}
+
+.login-box input:focus {
+	outline: none;
+	border-color: #665851;
+	transition: 0.5s;
+	color: #665851;
+}
+
+.login-box button {
+	margin-top: 0px;
+	border: 0;
+	border-radius: 2px;
+	color: white;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.7em;
+	letter-spacing: 1px;
+	background-color: #009688;
+	cursor:pointer;
+	outline: none;
+}
+
+.login-box button:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.login-box button:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+.selected {
+	color: #665851!important;
+	transition: 0.5s;
+}
+
+/* Animation Delay */
+#logo {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+}
+
+.login-box {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+h1#title {
+	font-family: 'Roboto Condensed', serif;
+	font-weight: 300;
+	font-size: 3.2em;
+	color: white;
+	text-shadow: 0 0 10px rgba(0,0,0,0.8);
+	margin: 0 auto;
+	padding-top: 50px;
+	max-width: 300px;
+	text-align: center;
+	position: relative;
+	top: 0px;
+}
+
+h1#title span span {
+	font-weight: 400;
+}
+
+div.login-box.animated.fadeInUp > div > h2 {
+  text-transform: uppercase;
+	color: white;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 1.4em;
+	line-height: 2.8em;
+}

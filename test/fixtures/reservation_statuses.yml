@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  created_by: MyString
+  updated_by: MyString
+  delete_flag: false
+
+two:
+  name: MyString
+  description: MyString
+  created_by: MyString
+  updated_by: MyString
+  delete_flag: false
