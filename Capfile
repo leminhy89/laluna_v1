@@ -12,6 +12,12 @@ set :rbenv_ruby, '2.4.0'
 require 'capistrano/bundler'
 require 'capistrano/rails'
 
+set :ssh_options, {
+  keys: %w(/YLE_Keypair.pem),
+  forward_agent: false,
+  user: 'ubuntu'
+}
+
 
 # Load the SCM plugin appropriate to your project:
 #
