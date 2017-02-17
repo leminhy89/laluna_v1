@@ -17,3 +17,5 @@
 /tmp
 config/database.yml
 config/secrets.yml
+T_Keypair.pem
+YLE_Keypair.pem
