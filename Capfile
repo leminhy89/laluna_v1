@@ -12,11 +12,16 @@ set :rbenv_ruby, '2.4.0'
 require 'capistrano/bundler'
 require 'capistrano/rails'
 
-set :ssh_options, {
-  keys: %w(/YLE_Keypair.pem),
-  forward_agent: false,
-  user: 'ubuntu'
-}
+#set :ssh_options, {
+#  keys: %w(/YLE_Keypair.pem),
+#  forward_agent: false,
+#  user: 'ubuntu'
+#}
+
+default_run_options[:pty] = true
+ssh_options[:forward_agent] = true
+ssh_options[:auth_methods] = ["publickey"]
+ssh_options[:keys] = ["/home/ubuntu/workspace/YLE_KeyProduction.pem"]
 
 
 # Load the SCM plugin appropriate to your project:
