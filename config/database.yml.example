@@ -6,28 +6,24 @@
 #
 default: &default
   adapter: postgresql
-  host: lalunadb.c3xv20llkflj.ap-southeast-1.rds.amazonaws.com
-  #host: 163.44.193.31
-  username: laluna
-  password: "H0ngkhanH"
+  host: localhost
+  username: username
+  password: ""
   pool: 5
   timeout: 5000
   encoding: unicode
 
 development:
   <<: *default
-  #database: "lalunadb"
-  database: "lalunapalacedb"
+  database: "dbname"
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: "lalunapalacedb"
-  #database: "postgres"
+  database: "dbname"
 
 production:
   <<: *default
-  database: "lalunapalacedb"
-  #database: "postgres"
+  database: "dbname"
