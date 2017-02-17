@@ -7,6 +7,8 @@ set :repo_url, "git@bitbucket.org:lalunaproduction/llnp_web.git"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
+set :rbenv_path, '/home/deploy/.rbenv/'
+
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/www/laluna_v1"
 
@@ -25,6 +27,17 @@ append :linked_files, "config/database.yml", "config/secrets.yml"
 
 # Default value for linked_dirs is []
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
+
+set :pty, true
+
+set :ssh_options, {
+  forward_agent: true,
+  auth_methods: ["publickey"],
+  keys: ["/home/ubuntu/workspace/YLE_KeyProduction.pem"]
+}
+
+
+
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }

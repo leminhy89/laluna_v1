@@ -18,11 +18,6 @@ require 'capistrano/rails'
 #  user: 'ubuntu'
 #}
 
-default_run_options[:pty] = true
-ssh_options[:forward_agent] = true
-ssh_options[:auth_methods] = ["publickey"]
-ssh_options[:keys] = ["/home/ubuntu/workspace/YLE_KeyProduction.pem"]
-
 
 # Load the SCM plugin appropriate to your project:
 #
