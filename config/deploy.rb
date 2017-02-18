@@ -12,6 +12,8 @@ set :rbenv_path, '/home/deploy/.rbenv/'
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/www/laluna_v1"
 
+set :passenger_restart_with_touch, true
+
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
